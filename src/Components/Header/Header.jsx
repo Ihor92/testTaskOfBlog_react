@@ -7,8 +7,10 @@ export default class Header extends Component {
     return (
       <>
         <div className="header">
-          <h2 className="title-h2">Header</h2>
-          <TabButtons />
+          <div className="header-wrap">
+            <h2 className="title-h2">Logo</h2>
+            <TabButtons />
+          </div>
         </div>
       </>
     );

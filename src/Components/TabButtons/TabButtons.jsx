@@ -1,18 +1,31 @@
 import React from 'react';
 import './TabButtons.css';
+import { Link } from 'react-router-dom';
 
 export default function TabButtons() {
   return (
-    <nav>
-      <ul>
+    <nav className="nav">
+      <ul className="nav-list">
         <li>
-          <a href="#home">Home</a>
+          <Link to="/">
+            <button>
+              Home
+            </button>
+          </Link>
         </li>
         <li>
-          <a href="#posts">Posts page</a>
+          <Link to="/post-page/">
+            <button>
+              Posts page
+            </button>
+          </Link>
         </li>
         <li>
-          <a href="#add">Add post blog</a>
+          <Link to="/add-post-blog/">
+            <button>
+              Add post blog
+            </button>
+          </Link>
         </li>
       </ul>
     </nav>

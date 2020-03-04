@@ -5,6 +5,14 @@
   color: #fff;
 }
 
+.header-wrap {
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+  margin: 0 auto;
+}
+
 .title-h2 {
   padding: 0;
   margin: 0;

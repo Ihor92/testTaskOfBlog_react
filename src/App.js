@@ -1,13 +1,11 @@
 import React from 'react';
 import './App.css';
-import Header from './Components/Header/Header';
-import MainPage from './Components/MainPage/MainPage';
+import { AppWrap as Wrap } from './Components/AppWrap/AppWrap'; 
 
 function App() {
   return (
     <div className="App">
-      <Header />
-      <MainPage />
+     <Wrap />
     </div>
   );
 }

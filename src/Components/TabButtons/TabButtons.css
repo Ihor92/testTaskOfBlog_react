@@ -1,3 +1,11 @@
-a {
-  color: #fff;
+.nav {
+  width: 50%;
+}
+
+.nav-list {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
 }
