@@ -4,9 +4,17 @@ import './TabButtons.css';
 export default function TabButtons() {
   return (
     <nav>
-      <a href="#home">home</a>
-      <a href="#posts">posts</a>
-      <a href="#add">add</a>
+      <ul>
+        <li>
+          <a href="#home">Home</a>
+        </li>
+        <li>
+          <a href="#posts">Posts page</a>
+        </li>
+        <li>
+          <a href="#add">Add post blog</a>
+        </li>
+      </ul>
     </nav>
   )
 }

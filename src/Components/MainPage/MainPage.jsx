@@ -3,6 +3,6 @@ import './MainPage.css';
 
 export default function MainPage() {
   return (
-    <h1>Some title</h1>
+    <h1>Main page</h1>
   );
 }
