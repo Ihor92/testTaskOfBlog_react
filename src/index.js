@@ -6,7 +6,7 @@ const store = createStore(reducer);
 const { dispatch } = store;
 
 
-const { inc, dec, clr, rnd, clr_rnd } = 
+const { inc, dec, rnd } = 
   bindActionCreators(actions, dispatch);
 
 
@@ -19,20 +19,11 @@ document.
   .addEventListener('click', dec);
 
 document
-  .getElementById('clr'
-  ).addEventListener('click', clr);
-
-document
   .getElementById('rnd')
   .addEventListener('click', () => {
     const payload = Math.floor(Math.random() * 10);
     rnd(payload);
   });
-
-document.getElementById('clr_rnd').addEventListener('click', () => {
-  const payload_clr = Math.floor(Math.random() * 10);
-  clr_rnd(payload_clr);
-});
 
 const update = () => {
   document.getElementById('counter').innerHTML = store.getState();
